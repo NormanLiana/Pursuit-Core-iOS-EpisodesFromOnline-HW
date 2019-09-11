@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A57E57312329877D00FC180C /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E57302329877D00FC180C /* EpisodesViewController.swift */; };
+		A57E5733232988CA00FC180C /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E5732232988CA00FC180C /* EpisodeDetailViewController.swift */; };
 		CD01CD5C232178AF002D0255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5B232178AF002D0255 /* AppDelegate.swift */; };
 		CD01CD5E232178AF002D0255 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5D232178AF002D0255 /* ShowsViewController.swift */; };
 		CD01CD61232178AF002D0255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD01CD5F232178AF002D0255 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		A57E57302329877D00FC180C /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		A57E5732232988CA00FC180C /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		CD01CD58232178AF002D0255 /* Pursuit-Core-iOS-Episodes-from-Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-iOS-Episodes-from-Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD01CD5B232178AF002D0255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD01CD5D232178AF002D0255 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				CD01CD5B232178AF002D0255 /* AppDelegate.swift */,
 				CD01CD5D232178AF002D0255 /* ShowsViewController.swift */,
 				A57E57302329877D00FC180C /* EpisodesViewController.swift */,
+				A57E5732232988CA00FC180C /* EpisodeDetailViewController.swift */,
 				CD01CD5F232178AF002D0255 /* Main.storyboard */,
 				CD01CD62232178B2002D0255 /* Assets.xcassets */,
 				CD01CD64232178B2002D0255 /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A57E57312329877D00FC180C /* EpisodesViewController.swift in Sources */,
+				A57E5733232988CA00FC180C /* EpisodeDetailViewController.swift in Sources */,
 				CD01CD5E232178AF002D0255 /* ShowsViewController.swift in Sources */,
 				CD01CD5C232178AF002D0255 /* AppDelegate.swift in Sources */,
 			);

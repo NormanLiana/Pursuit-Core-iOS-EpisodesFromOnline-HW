@@ -41,6 +41,21 @@
             </objects>
             <point key="canvasLocation" x="1716" y="21"/>
         </scene>
+        <!--Episode Detail View Controller-->
+        <scene sceneID="KJW-8W-4XF">
+            <objects>
+                <viewController id="TA5-DB-3nu" customClass="EpisodeDetailViewController" customModule="Pursuit_Core_iOS_Episodes_from_Online" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bDu-qx-Pc0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eQU-PY-Iya"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nj0-9x-zjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2467" y="21"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="RTz-2u-Mkg">
             <objects>
