@@ -105,9 +105,17 @@
 				A57E5741232ADE2B00FC180C /* NetworkManager.swift */,
 				A57E5743232ADF1C00FC180C /* AppError.swift */,
 				A57E5746232AE0ED00FC180C /* ShowAPIClient.swift */,
-				A57E5748232AE29800FC180C /* ShowsModel.swift */,
+				A57E574A232AE91E00FC180C /* Models */,
 			);
 			path = "Client Network Error";
+			sourceTree = "<group>";
+		};
+		A57E574A232AE91E00FC180C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A57E5748232AE29800FC180C /* ShowsModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CD01CD4F232178AF002D0255 = {
