@@ -11,6 +11,7 @@
 		A57E5733232988CA00FC180C /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E5732232988CA00FC180C /* EpisodeDetailViewController.swift */; };
 		A57E5735232A7B1A00FC180C /* ShowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E5734232A7B1A00FC180C /* ShowsTableViewCell.swift */; };
 		A57E573D232AD2E600FC180C /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E573C232AD2E600FC180C /* EpisodeTableViewCell.swift */; };
+		A57E5742232ADE2B00FC180C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E5741232ADE2B00FC180C /* NetworkManager.swift */; };
 		CD01CD5C232178AF002D0255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5B232178AF002D0255 /* AppDelegate.swift */; };
 		CD01CD5E232178AF002D0255 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5D232178AF002D0255 /* ShowsViewController.swift */; };
 		CD01CD61232178AF002D0255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD01CD5F232178AF002D0255 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		A57E5732232988CA00FC180C /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		A57E5734232A7B1A00FC180C /* ShowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsTableViewCell.swift; sourceTree = "<group>"; };
 		A57E573C232AD2E600FC180C /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		A57E5741232ADE2B00FC180C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CD01CD58232178AF002D0255 /* Pursuit-Core-iOS-Episodes-from-Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-iOS-Episodes-from-Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD01CD5B232178AF002D0255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD01CD5D232178AF002D0255 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A57E573E232ADDAD00FC180C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD01CD5D232178AF002D0255 /* ShowsViewController.swift */,
+				A57E57302329877D00FC180C /* EpisodesViewController.swift */,
+				A57E5732232988CA00FC180C /* EpisodeDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A57E573F232ADDD800FC180C /* TVCells */ = {
+			isa = PBXGroup;
+			children = (
+				A57E573C232AD2E600FC180C /* EpisodeTableViewCell.swift */,
+				A57E5734232A7B1A00FC180C /* ShowsTableViewCell.swift */,
+			);
+			path = TVCells;
+			sourceTree = "<group>";
+		};
+		A57E5740232ADDF700FC180C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD01CD5F232178AF002D0255 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CD01CD4F232178AF002D0255 = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				CD01CD5B232178AF002D0255 /* AppDelegate.swift */,
-				CD01CD5D232178AF002D0255 /* ShowsViewController.swift */,
-				A57E57302329877D00FC180C /* EpisodesViewController.swift */,
-				A57E5732232988CA00FC180C /* EpisodeDetailViewController.swift */,
-				CD01CD5F232178AF002D0255 /* Main.storyboard */,
-				A57E573C232AD2E600FC180C /* EpisodeTableViewCell.swift */,
-				A57E5734232A7B1A00FC180C /* ShowsTableViewCell.swift */,
+				A57E5741232ADE2B00FC180C /* NetworkManager.swift */,
+				A57E573E232ADDAD00FC180C /* Controllers */,
+				A57E5740232ADDF700FC180C /* Views */,
+				A57E573F232ADDD800FC180C /* TVCells */,
 				CD01CD62232178B2002D0255 /* Assets.xcassets */,
 				CD01CD64232178B2002D0255 /* LaunchScreen.storyboard */,
 				CD01CD67232178B2002D0255 /* Info.plist */,
@@ -212,6 +239,7 @@
 				A57E57312329877D00FC180C /* EpisodesViewController.swift in Sources */,
 				A57E5733232988CA00FC180C /* EpisodeDetailViewController.swift in Sources */,
 				CD01CD5E232178AF002D0255 /* ShowsViewController.swift in Sources */,
+				A57E5742232ADE2B00FC180C /* NetworkManager.swift in Sources */,
 				A57E573D232AD2E600FC180C /* EpisodeTableViewCell.swift in Sources */,
 				A57E5735232A7B1A00FC180C /* ShowsTableViewCell.swift in Sources */,
 				CD01CD5C232178AF002D0255 /* AppDelegate.swift in Sources */,
