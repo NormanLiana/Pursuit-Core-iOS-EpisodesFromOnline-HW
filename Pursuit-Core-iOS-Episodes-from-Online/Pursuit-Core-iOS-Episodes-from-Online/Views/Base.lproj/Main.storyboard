@@ -70,6 +70,10 @@
                                                 <constraint firstItem="Xeb-18-x6y" firstAttribute="centerX" secondItem="ap5-Ah-EJZ" secondAttribute="centerX" multiplier="0.4" id="pLn-wl-8eU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="showNameLabel" destination="qYa-rS-YIQ" id="YzZ-G6-7vo"/>
+                                            <outlet property="showRatingsLabel" destination="Hfh-pd-s9K" id="Rrs-km-Ero"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

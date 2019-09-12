@@ -10,11 +10,18 @@ import UIKit
 
 class ShowsViewController: UIViewController {
 
+    // MARK: Outlets
+    
+    // MARK: Properties
+    
+    // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
+    
+    // MARK: Private Methods
 
 
 }
 
+// MARK: Extensions
