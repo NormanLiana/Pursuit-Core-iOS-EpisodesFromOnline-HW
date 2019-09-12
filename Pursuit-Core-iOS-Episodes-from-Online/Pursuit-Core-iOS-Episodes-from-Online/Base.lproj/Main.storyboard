@@ -103,34 +103,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ulr-h5-j2I">
-                                <rect key="frame" x="87" y="215" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ulr-h5-j2I">
+                                <rect key="frame" x="87" y="147" width="240" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="d3p-P7-4rA"/>
+                                    <constraint firstAttribute="width" constant="240" id="vGz-la-V2s"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-dO-UxU">
-                                <rect key="frame" x="92" y="370" width="230" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-dO-UxU">
+                                <rect key="frame" x="92" y="338.5" width="230" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="N8E-wz-x6x"/>
+                                    <constraint firstAttribute="height" constant="40" id="rzP-Hc-CRz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nE-ff-VaZ">
-                                <rect key="frame" x="92" y="443" width="230" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nE-ff-VaZ">
+                                <rect key="frame" x="92" y="428" width="230" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="5lF-5i-WFv"/>
+                                    <constraint firstAttribute="height" constant="40" id="MrY-Y1-aAb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-0O-ehV">
-                                <rect key="frame" x="87" y="551" width="240" height="245"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-0O-ehV">
+                                <rect key="frame" x="87" y="504.5" width="240" height="245"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="43t-Av-UbS"/>
+                                    <constraint firstAttribute="width" constant="240" id="dp1-UW-A0S"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IFd-0O-ehV" firstAttribute="centerY" secondItem="bDu-qx-Pc0" secondAttribute="centerY" multiplier="1.4" id="EY5-NS-hLP"/>
+                            <constraint firstItem="Ulr-h5-j2I" firstAttribute="centerX" secondItem="bDu-qx-Pc0" secondAttribute="centerX" id="J67-PM-q0r"/>
+                            <constraint firstItem="IFd-0O-ehV" firstAttribute="centerX" secondItem="bDu-qx-Pc0" secondAttribute="centerX" id="eHo-30-PEV"/>
+                            <constraint firstItem="QA1-dO-UxU" firstAttribute="centerY" secondItem="bDu-qx-Pc0" secondAttribute="centerY" multiplier="0.8" id="fAb-kp-iN0"/>
+                            <constraint firstItem="Ulr-h5-j2I" firstAttribute="centerY" secondItem="bDu-qx-Pc0" secondAttribute="centerY" multiplier="0.5" id="qPM-Bb-Cq1"/>
+                            <constraint firstItem="7nE-ff-VaZ" firstAttribute="centerY" secondItem="bDu-qx-Pc0" secondAttribute="centerY" id="rMw-rL-0mW"/>
+                            <constraint firstItem="7nE-ff-VaZ" firstAttribute="centerX" secondItem="bDu-qx-Pc0" secondAttribute="centerX" id="uV2-xF-dHB"/>
+                            <constraint firstItem="QA1-dO-UxU" firstAttribute="centerX" secondItem="bDu-qx-Pc0" secondAttribute="centerX" id="z6V-0N-de5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eQU-PY-Iya"/>
                     </view>
                 </viewController>
