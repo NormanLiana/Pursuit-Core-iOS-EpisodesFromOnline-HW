@@ -13,7 +13,20 @@ class ShowAPIClient {
     
     static var shared = ShowAPIClient()
     let urlString = "http://api.tvmaze.com/search/shows?q=girls"
-    func getShows(completionHandler: @escaping (Result<[String], AppError>) -> () ) {
-        
+    func getShows(completionHandler: @escaping (Result<[ShowWrapper], AppError>) -> () ) {
+        NetworkManager.shared.fetchData(urlString: urlString) { (result) in
+            switch result {
+            case .failure(let error):
+                completionHandler(.failure(.badURL))
+            case .success(let data):
+                do {
+                    let showInfo = try JSONDecoder().decode([ShowWrapper].self, from: data)
+                    completionHandler(.success(showInfo))
+                } catch {
+                    completionHandler(.failure(.noDataError))
+                }
+                
+            }
+        }
     }
 }
