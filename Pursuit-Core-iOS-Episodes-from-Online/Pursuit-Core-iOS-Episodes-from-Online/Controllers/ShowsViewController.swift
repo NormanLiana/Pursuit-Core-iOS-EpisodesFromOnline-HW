@@ -12,7 +12,9 @@ class ShowsViewController: UIViewController {
 
     // MARK: Outlets
     
+    
     // MARK: Properties
+    var shows = [ShowWrapper]()
     
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
