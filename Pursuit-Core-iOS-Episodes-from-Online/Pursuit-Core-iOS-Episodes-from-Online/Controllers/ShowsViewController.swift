@@ -12,6 +12,7 @@ class ShowsViewController: UIViewController {
 
     // MARK: Outlets
     
+    @IBOutlet weak var showsTableView: UITableView!
     
     // MARK: Properties
     var shows = [ShowWrapper]()
