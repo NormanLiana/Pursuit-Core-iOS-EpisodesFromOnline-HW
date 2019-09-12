@@ -64,7 +64,20 @@
                     <view key="view" contentMode="scaleToFill" id="fGx-9y-gRc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XgQ-mU-M9j">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XgQ-mU-M9j" firstAttribute="leading" secondItem="IF5-sk-hXe" secondAttribute="leading" id="5lc-5Z-G1L"/>
+                            <constraint firstItem="IF5-sk-hXe" firstAttribute="trailing" secondItem="XgQ-mU-M9j" secondAttribute="trailing" id="Kod-RQ-r9E"/>
+                            <constraint firstItem="IF5-sk-hXe" firstAttribute="bottom" secondItem="XgQ-mU-M9j" secondAttribute="bottom" id="T20-Je-omo"/>
+                            <constraint firstItem="XgQ-mU-M9j" firstAttribute="top" secondItem="IF5-sk-hXe" secondAttribute="top" id="c96-dy-sua"/>
+                            <constraint firstItem="XgQ-mU-M9j" firstAttribute="centerX" secondItem="fGx-9y-gRc" secondAttribute="centerX" id="eH1-A3-chc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IF5-sk-hXe"/>
                     </view>
                 </viewController>
