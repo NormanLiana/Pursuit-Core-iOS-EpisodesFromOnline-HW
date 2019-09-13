@@ -11,20 +11,59 @@ import UIKit
 class ShowsViewController: UIViewController {
 
     // MARK: Outlets
-    
+
     @IBOutlet weak var showsTableView: UITableView!
     
     // MARK: Properties
-    var shows = [ShowWrapper]()
+    var shows = [ShowWrapper]() {
+        didSet {
+            showsTableView.reloadData()
+        }
+    }
     
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        showsTableView.dataSource = self
+        showsTableView.delegate = self
+        loadData()
     }
     
     // MARK: Private Methods
-
+    private func loadData() {
+        ShowAPIClient.shared.getShows { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let showsFromOnline):
+                    self.shows = showsFromOnline
+                case .failure(let error):
+                    print("its me")
+                    print(error)
+                }
+            }
+        }
+    }
 
 }
 
 // MARK: Extensions
+extension ShowsViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return shows.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cells = showsTableView.dequeueReusableCell(withIdentifier: "showCell", for: indexPath) as? ShowsTableViewCell {
+            cells.showNameLabel.text = shows[indexPath.row].show.name
+            cells.showRatingsLabel.text = shows[indexPath.row].score.description
+            return cells
+        }
+        return UITableViewCell()
+    }
+    
+}
+
+extension ShowsViewController: UITableViewDelegate {
+    
+}
