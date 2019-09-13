@@ -20,18 +20,33 @@ class ShowsViewController: UIViewController {
             showsTableView.reloadData()
         }
     }
+    var searchString: String? = nil {
+        didSet {
+            self.showsTableView.reloadData()
+        }
+    }
+    var showSearchResults: [ShowWrapper] {
+        get {
+            guard let searchString = searchString else {
+                return shows
+            }
+            guard searchString != "" else {
+                return shows
+            }
+            return shows
+        }
+    }
     
     // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         showsTableView.dataSource = self
         showsTableView.delegate = self
-        loadData()
     }
     
     // MARK: Private Methods
-    private func loadData() {
-        ShowAPIClient.shared.getShows { (result) in
+    private func loadData(userInput: String?) {
+        ShowAPIClient.shared.getShows(userSearchTerm: userInput) { (result) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let showsFromOnline):
@@ -54,6 +69,7 @@ extension ShowsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if let cells = showsTableView.dequeueReusableCell(withIdentifier: "showCell", for: indexPath) as? ShowsTableViewCell {
             cells.showNameLabel.text = shows[indexPath.row].show.name
             cells.showRatingsLabel.text = shows[indexPath.row].score.description
@@ -67,3 +83,9 @@ extension ShowsViewController: UITableViewDataSource {
 extension ShowsViewController: UITableViewDelegate {
     
 }
+
+//extension ShowsViewController: UISearchBarDelegate {
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        <#code#>
+//    }
+//}

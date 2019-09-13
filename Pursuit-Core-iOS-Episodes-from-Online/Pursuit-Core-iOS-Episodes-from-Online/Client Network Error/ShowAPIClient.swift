@@ -12,11 +12,15 @@ class ShowAPIClient {
     private init() {}
     
     static var shared = ShowAPIClient()
-    let urlString = "http://api.tvmaze.com/search/shows?q=girls"
-    func getShows(completionHandler: @escaping (Result<[ShowWrapper], AppError>) -> () ) {
-        NetworkManager.shared.fetchData(urlString: urlString) { (result) in
+    
+    
+    func getShows(userSearchTerm: String?, completionHandler: @escaping (Result<[ShowWrapper], AppError>) -> () ) {
+        if let urlString = userSearchTerm {
+           let urlStr = "http://api.tvmaze.com/search/shows?q=\(urlString)"
+        
+        NetworkManager.shared.fetchData(urlString: urlStr) { (result) in
             switch result {
-            case .failure(let error):
+            case .failure( _):
                 completionHandler(.failure(.badURL))
             case .success(let data):
                 do {
@@ -28,5 +32,5 @@ class ShowAPIClient {
                 
             }
         }
-    }
+        }}
 }

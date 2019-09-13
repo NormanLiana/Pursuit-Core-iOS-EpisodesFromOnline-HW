@@ -15,6 +15,7 @@
 		A57E5744232ADF1C00FC180C /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E5743232ADF1C00FC180C /* AppError.swift */; };
 		A57E5747232AE0ED00FC180C /* ShowAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E5746232AE0ED00FC180C /* ShowAPIClient.swift */; };
 		A57E5749232AE29800FC180C /* ShowsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E5748232AE29800FC180C /* ShowsModel.swift */; };
+		A57E574C232BD25800FC180C /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E574B232BD25800FC180C /* ImageHelper.swift */; };
 		CD01CD5C232178AF002D0255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5B232178AF002D0255 /* AppDelegate.swift */; };
 		CD01CD5E232178AF002D0255 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5D232178AF002D0255 /* ShowsViewController.swift */; };
 		CD01CD61232178AF002D0255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD01CD5F232178AF002D0255 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		A57E5743232ADF1C00FC180C /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		A57E5746232AE0ED00FC180C /* ShowAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAPIClient.swift; sourceTree = "<group>"; };
 		A57E5748232AE29800FC180C /* ShowsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsModel.swift; sourceTree = "<group>"; };
+		A57E574B232BD25800FC180C /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		CD01CD58232178AF002D0255 /* Pursuit-Core-iOS-Episodes-from-Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-iOS-Episodes-from-Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD01CD5B232178AF002D0255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD01CD5D232178AF002D0255 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				A57E5741232ADE2B00FC180C /* NetworkManager.swift */,
 				A57E5743232ADF1C00FC180C /* AppError.swift */,
 				A57E5746232AE0ED00FC180C /* ShowAPIClient.swift */,
+				A57E574B232BD25800FC180C /* ImageHelper.swift */,
 				A57E574A232AE91E00FC180C /* Models */,
 			);
 			path = "Client Network Error";
@@ -271,6 +274,7 @@
 				A57E573D232AD2E600FC180C /* EpisodeTableViewCell.swift in Sources */,
 				A57E5735232A7B1A00FC180C /* ShowsTableViewCell.swift in Sources */,
 				CD01CD5C232178AF002D0255 /* AppDelegate.swift in Sources */,
+				A57E574C232BD25800FC180C /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
