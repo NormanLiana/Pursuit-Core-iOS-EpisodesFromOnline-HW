@@ -12,7 +12,7 @@ class DetailElementViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet weak var elementImage: UIImageView!
-    
+    @IBOutlet weak var navBarTitle: UINavigationBar!
     
     // MARK: Properties
     var element: Element!
@@ -25,14 +25,17 @@ class DetailElementViewController: UIViewController {
     
     // MARK: Private Methods
     private func setupViews() {
+        self.navigationItem.title = element.name
         let imageNameStr = element.name.lowercased()
         let urlStr = "http://images-of-elements.com/\(imageNameStr).jpg"
         ImageHelper.shared.getImage(urlStr: urlStr) { (result) in
-            switch result {
-            case .success(let imageFromOnline):
-                self.elementImage.image = imageFromOnline
-            case .failure(let error):
-                print(error)
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let imageFromOnline):
+                    self.elementImage.image = imageFromOnline
+                case .failure(let error):
+                    print(error)
+                }
             }
         }
     }
