@@ -41,6 +41,19 @@ class ElementViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: Navigation Methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "elementSegue" {
+            guard let detailElementVC = segue.destination as? DetailElementViewController else {
+                fatalError()
+            }
+            guard let selectedIndexPath = elementTableView.indexPathForSelectedRow else {
+                fatalError()
+            }
+            detailElementVC.element = elements[selectedIndexPath.row]
+        }
+    }
 }
 
 

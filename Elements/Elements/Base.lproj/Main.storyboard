@@ -70,6 +70,7 @@
                                             <outlet property="elementImage" destination="qQE-Lm-QYF" id="w9A-0y-sMu"/>
                                             <outlet property="elementName" destination="yjv-S5-bjm" id="bH0-Ct-mEJ"/>
                                             <outlet property="elementSymbolNumberWeight" destination="tjn-GC-Umz" id="WOV-E6-64n"/>
+                                            <segue destination="B9b-LB-hck" kind="show" identifier="elementSegue" id="TeS-68-mZA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -93,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="1071.0144927536232" y="130.58035714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Element View Controller-->
         <scene sceneID="bZp-NE-H5u">
             <objects>
-                <viewController id="B9b-LB-hck" sceneMemberID="viewController">
+                <viewController id="B9b-LB-hck" customClass="DetailElementViewController" customModule="Elements" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tBy-pG-Wgq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,6 +110,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gLq-GD-3nV"/>
                     </view>
+                    <connections>
+                        <outlet property="elementImage" destination="naJ-gl-xEZ" id="iBU-dN-dF5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIC-Z1-ucv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
