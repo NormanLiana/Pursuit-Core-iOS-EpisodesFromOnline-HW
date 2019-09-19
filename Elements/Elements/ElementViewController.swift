@@ -54,7 +54,7 @@ extension ElementViewController: UITableViewDataSource {
         if let cell = elementTableView.dequeueReusableCell(withIdentifier: "elementCell", for: indexPath) as? ElementTableViewCell {
             let element = elements[indexPath.row]
            cell.elementName.text = element.name
-            cell.elementSymbolNumberWeight.text = "\(element.symbol)(\(element.number) \(element.weight))"
+            cell.elementSymbolNumberWeight.text = "\(element.symbol)(\(element.number)) \(element.weight)"
             let elementNumber = ThumbnailImage.configureElementNumberForThumbnail(elementNumber: element.number)
             let urlStr = "http://www.theodoregray.com/periodictable/Tiles/\(elementNumber)/s7.JPG"
             ImageHelper.shared.getImage(urlStr: urlStr) { (result) in
