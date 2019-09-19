@@ -14,6 +14,7 @@
 		A5A950A02333C815001B5BD0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9509F2333C815001B5BD0 /* NetworkHelper.swift */; };
 		A5A950A22333C877001B5BD0 /* AppErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950A12333C877001B5BD0 /* AppErrorHandler.swift */; };
 		A5A950A52333C917001B5BD0 /* Element Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950A42333C917001B5BD0 /* Element Model.swift */; };
+		A5A950A82333C9F6001B5BD0 /* ElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A5A9509F2333C815001B5BD0 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		A5A950A12333C877001B5BD0 /* AppErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorHandler.swift; sourceTree = "<group>"; };
 		A5A950A42333C917001B5BD0 /* Element Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Element Model.swift"; sourceTree = "<group>"; };
+		A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		5734756021DA90C700FB6177 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */,
 				A5A950A32333C8F0001B5BD0 /* Network */,
 				5734756521DA90C700FB6177 /* Main.storyboard */,
 				5734757321DA90F500FB6177 /* Supporting Files */,
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A950A82333C9F6001B5BD0 /* ElementViewController.swift in Sources */,
 				A5A950A22333C877001B5BD0 /* AppErrorHandler.swift in Sources */,
 				A5A950A52333C917001B5BD0 /* Element Model.swift in Sources */,
 				A5A950A02333C815001B5BD0 /* NetworkHelper.swift in Sources */,
