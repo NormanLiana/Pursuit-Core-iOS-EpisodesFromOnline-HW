@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KH4-bS-sX5">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,13 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="7M5-3L-SS9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TZl-lR-PcF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TZl-lR-PcF" firstAttribute="bottom" secondItem="Aoa-pe-cpe" secondAttribute="bottom" id="0c1-n5-jgI"/>
+                            <constraint firstItem="TZl-lR-PcF" firstAttribute="trailing" secondItem="Aoa-pe-cpe" secondAttribute="trailing" id="Y0i-VI-P1D"/>
+                            <constraint firstItem="TZl-lR-PcF" firstAttribute="top" secondItem="Aoa-pe-cpe" secondAttribute="top" id="vLb-Zz-wun"/>
+                            <constraint firstItem="TZl-lR-PcF" firstAttribute="leading" secondItem="Aoa-pe-cpe" secondAttribute="leading" id="xa2-cD-hvX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Aoa-pe-cpe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="w0W-nD-5A6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dh2-m4-gKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="131"/>
+            <point key="canvasLocation" x="1071.0144927536232" y="130.58035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7cD-dq-cr7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KH4-bS-sX5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E20-vJ-Oq4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="q2r-kB-pfe" kind="relationship" relationship="rootViewController" id="Lot-c4-iMH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="st5-5j-gqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="130.58035714285714"/>
         </scene>
     </scenes>
 </document>
