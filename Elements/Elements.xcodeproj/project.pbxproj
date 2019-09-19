@@ -20,6 +20,7 @@
 		A5A950BB2333D394001B5BD0 /* ElementAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950BA2333D394001B5BD0 /* ElementAPIClient.swift */; };
 		A5A950BD2333D3FC001B5BD0 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950BC2333D3FC001B5BD0 /* ImageHelper.swift */; };
 		A5A950C1233405F9001B5BD0 /* ThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */; };
+		A5A950C323340A52001B5BD0 /* DetailElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C223340A52001B5BD0 /* DetailElementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 		A5A9509F2333C815001B5BD0 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		A5A950A12333C877001B5BD0 /* AppErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorHandler.swift; sourceTree = "<group>"; };
 		A5A950A42333C917001B5BD0 /* Element Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Element Model.swift"; sourceTree = "<group>"; };
-		A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementViewController.swift; sourceTree = "<group>"; };
+		A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ElementViewController.swift; path = ../ElementViewController.swift; sourceTree = "<group>"; };
 		A5A950A92333CC04001B5BD0 /* ElementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementTableViewCell.swift; sourceTree = "<group>"; };
 		A5A950B02333CEC8001B5BD0 /* ElementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A950B22333CEC8001B5BD0 /* ElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsTests.swift; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		A5A950BA2333D394001B5BD0 /* ElementAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementAPIClient.swift; sourceTree = "<group>"; };
 		A5A950BC2333D3FC001B5BD0 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailImage.swift; sourceTree = "<group>"; };
+		A5A950C223340A52001B5BD0 /* DetailElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailElementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,7 @@
 		5734756021DA90C700FB6177 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */,
+				A5A950C423340A5E001B5BD0 /* Controllers */,
 				A5A950AB2333CC13001B5BD0 /* TableViewCells */,
 				A5A950A32333C8F0001B5BD0 /* Network */,
 				5734756521DA90C700FB6177 /* Main.storyboard */,
@@ -147,6 +149,15 @@
 				A5A950B42333CEC8001B5BD0 /* Info.plist */,
 			);
 			path = ElementsTests;
+			sourceTree = "<group>";
+		};
+		A5A950C423340A5E001B5BD0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */,
+				A5A950C223340A52001B5BD0 /* DetailElementViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A950C323340A52001B5BD0 /* DetailElementViewController.swift in Sources */,
 				A5A950BB2333D394001B5BD0 /* ElementAPIClient.swift in Sources */,
 				A5A950AA2333CC04001B5BD0 /* ElementTableViewCell.swift in Sources */,
 				A5A950A82333C9F6001B5BD0 /* ElementViewController.swift in Sources */,
