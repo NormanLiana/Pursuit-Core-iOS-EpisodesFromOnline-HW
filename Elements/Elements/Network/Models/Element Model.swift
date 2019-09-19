@@ -13,9 +13,9 @@ struct Element: Codable {
     let number: Int
     let symbol: String
     let weight: Double
-    let meltingPoint: Double
-    let boilingPoint: Double
-    let discoveredBy: String
+    let meltingPoint: Double?
+    let boilingPoint: Double?
+    let discoveredBy: String?
     
     private enum CodingKeys: String, CodingKey {
         case name

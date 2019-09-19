@@ -10,5 +10,8 @@ import UIKit
 
 class ElementTableViewCell: UITableViewCell {
 
-
+    @IBOutlet weak var elementImage: UIImageView!
+    @IBOutlet weak var elementName: UILabel!
+    @IBOutlet weak var elementSymbolNumberWeight: UILabel!
+    
 }

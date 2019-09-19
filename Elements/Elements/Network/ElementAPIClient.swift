@@ -14,7 +14,7 @@ class ElementAPIManager {
     static let shared = ElementAPIManager()
     
     func getElements(completionHandler: @escaping (Result<[Element], AppError>) -> () ) {
-        let urlStr = ""
+        let urlStr = "https://5c1d79abbc26950013fbcaa9.mockapi.io/api/v1/elements"
         
         guard let url = URL(string: urlStr) else {
             completionHandler(.failure(.badURL))
@@ -26,9 +26,9 @@ class ElementAPIManager {
                 completionHandler(.failure(error))
             case .success(let data):
                 do {
-                    let elementInfo = try JSONDecoder().decode(Element.self, from: data)
+                    let elementInfo = try JSONDecoder().decode([Element].self, from: data)
                     
-                    completionHandler(.success([elementInfo]))
+                    completionHandler(.success(elementInfo))
                 } catch {
                     completionHandler(.failure(.couldNotParseJSON(rawError: error)))
                 }
