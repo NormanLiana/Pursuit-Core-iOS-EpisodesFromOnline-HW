@@ -26,6 +26,25 @@ struct Element: Codable {
         case boilingPoint = "boil"
         case discoveredBy = "discovered_by"
     }
+    
+   
+        static func configureElementNumberForThumbnail(elementNumber: Int) -> String {
+            var numberStr: String
+            switch elementNumber {
+            case 1...9:
+                numberStr = "00\(String(elementNumber))"
+                return numberStr
+            case 10...99:
+                numberStr = "0\(String(elementNumber))"
+                return numberStr
+            case 100...118:
+                numberStr = "\(String(elementNumber))"
+                return numberStr
+            default:
+                return ""
+            }
+        }
+    
 }
 
 //[

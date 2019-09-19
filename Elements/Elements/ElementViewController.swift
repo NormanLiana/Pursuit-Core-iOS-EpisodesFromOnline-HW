@@ -55,6 +55,18 @@ extension ElementViewController: UITableViewDataSource {
             let element = elements[indexPath.row]
            cell.elementName.text = element.name
             cell.elementSymbolNumberWeight.text = "\(element.symbol)(\(element.number) \(element.weight))"
+            let elementNumber = ThumbnailImage.configureElementNumberForThumbnail(elementNumber: element.number)
+            let urlStr = "http://www.theodoregray.com/periodictable/Tiles/\(elementNumber)/s7.JPG"
+            ImageHelper.shared.getImage(urlStr: urlStr) { (result) in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .failure(let error):
+                        print(error)
+                    case .success(let imageFromOnline):
+                        cell.elementImage.image = imageFromOnline
+                    }
+                }
+            }
             return cell
         }
         return UITableViewCell()

@@ -19,6 +19,7 @@
 		A5A950B32333CEC8001B5BD0 /* ElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950B22333CEC8001B5BD0 /* ElementsTests.swift */; };
 		A5A950BB2333D394001B5BD0 /* ElementAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950BA2333D394001B5BD0 /* ElementAPIClient.swift */; };
 		A5A950BD2333D3FC001B5BD0 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950BC2333D3FC001B5BD0 /* ImageHelper.swift */; };
+		A5A950C1233405F9001B5BD0 /* ThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A5A950B42333CEC8001B5BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A950BA2333D394001B5BD0 /* ElementAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementAPIClient.swift; sourceTree = "<group>"; };
 		A5A950BC2333D3FC001B5BD0 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A950A42333C917001B5BD0 /* Element Model.swift */,
+				A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				A5A950BB2333D394001B5BD0 /* ElementAPIClient.swift in Sources */,
 				A5A950AA2333CC04001B5BD0 /* ElementTableViewCell.swift in Sources */,
 				A5A950A82333C9F6001B5BD0 /* ElementViewController.swift in Sources */,
+				A5A950C1233405F9001B5BD0 /* ThumbnailImage.swift in Sources */,
 				A5A950A22333C877001B5BD0 /* AppErrorHandler.swift in Sources */,
 				A5A950A52333C917001B5BD0 /* Element Model.swift in Sources */,
 				A5A950A02333C815001B5BD0 /* NetworkHelper.swift in Sources */,
