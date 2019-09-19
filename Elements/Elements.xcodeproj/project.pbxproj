@@ -21,6 +21,7 @@
 		A5A950BD2333D3FC001B5BD0 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950BC2333D3FC001B5BD0 /* ImageHelper.swift */; };
 		A5A950C1233405F9001B5BD0 /* ThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */; };
 		A5A950C323340A52001B5BD0 /* DetailElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C223340A52001B5BD0 /* DetailElementViewController.swift */; };
+		A5A950C6233428A8001B5BD0 /* FavoriteElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C5233428A8001B5BD0 /* FavoriteElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A5A950BC2333D3FC001B5BD0 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailImage.swift; sourceTree = "<group>"; };
 		A5A950C223340A52001B5BD0 /* DetailElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailElementViewController.swift; sourceTree = "<group>"; };
+		A5A950C5233428A8001B5BD0 /* FavoriteElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				A5A950A42333C917001B5BD0 /* Element Model.swift */,
 				A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */,
+				A5A950C5233428A8001B5BD0 /* FavoriteElement.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				A5A950A22333C877001B5BD0 /* AppErrorHandler.swift in Sources */,
 				A5A950A52333C917001B5BD0 /* Element Model.swift in Sources */,
 				A5A950A02333C815001B5BD0 /* NetworkHelper.swift in Sources */,
+				A5A950C6233428A8001B5BD0 /* FavoriteElement.swift in Sources */,
 				5734756221DA90C700FB6177 /* AppDelegate.swift in Sources */,
 				A5A950BD2333D3FC001B5BD0 /* ImageHelper.swift in Sources */,
 			);

@@ -36,12 +36,12 @@ class ElementAPIManager {
         }
     }
     
-    func postElement(element: Element, completionHandler: @escaping (Result<Data, AppError>) -> () ) {
+    func postElement(element: FavoriteElement, completionHandler: @escaping (Result<Data, AppError>) -> () ) {
         
         guard let encodedData = try? JSONEncoder().encode(element) else {
             fatalError("encoder failed")
         }
-        let urlStr = ""
+        let urlStr = "https://5c1d79abbc26950013fbcaa9.mockapi.io/api/v1/favorites"
         guard let url = URL(string: urlStr) else {
             completionHandler(.failure(.badURL))
             return

@@ -30,6 +30,22 @@ class DetailElementViewController: UIViewController {
         setupViews()
     }
     
+    // MARK: IBActions
+    @IBAction func favoriteButtonPressed(_ sender: Any) {
+        let favorite = FavoriteElement(favoritedBy: "Liana", elementName: element.name, elementSymbol: element.symbol)
+        ElementAPIManager.shared.postElement(element: favorite) { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success:
+                    print("We posted our favorite")
+                case .failure(let error):
+                    print(error)
+                    
+                }
+            }
+        }
+    }
+    
     // MARK: Private Methods
     private func setupViews() {
         self.navigationItem.title = element.name
