@@ -15,6 +15,7 @@
 		A5A950A22333C877001B5BD0 /* AppErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950A12333C877001B5BD0 /* AppErrorHandler.swift */; };
 		A5A950A52333C917001B5BD0 /* Element Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950A42333C917001B5BD0 /* Element Model.swift */; };
 		A5A950A82333C9F6001B5BD0 /* ElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */; };
+		A5A950AA2333CC04001B5BD0 /* ElementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950A92333CC04001B5BD0 /* ElementTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A5A950A12333C877001B5BD0 /* AppErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorHandler.swift; sourceTree = "<group>"; };
 		A5A950A42333C917001B5BD0 /* Element Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Element Model.swift"; sourceTree = "<group>"; };
 		A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementViewController.swift; sourceTree = "<group>"; };
+		A5A950A92333CC04001B5BD0 /* ElementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A950A72333C9F6001B5BD0 /* ElementViewController.swift */,
+				A5A950AB2333CC13001B5BD0 /* TableViewCells */,
 				A5A950A32333C8F0001B5BD0 /* Network */,
 				5734756521DA90C700FB6177 /* Main.storyboard */,
 				5734757321DA90F500FB6177 /* Supporting Files */,
@@ -95,6 +98,14 @@
 				A5A950A42333C917001B5BD0 /* Element Model.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A5A950AB2333CC13001B5BD0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A5A950A92333CC04001B5BD0 /* ElementTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A950AA2333CC04001B5BD0 /* ElementTableViewCell.swift in Sources */,
 				A5A950A82333C9F6001B5BD0 /* ElementViewController.swift in Sources */,
 				A5A950A22333C877001B5BD0 /* AppErrorHandler.swift in Sources */,
 				A5A950A52333C917001B5BD0 /* Element Model.swift in Sources */,
