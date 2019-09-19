@@ -39,7 +39,7 @@ class DetailElementViewController: UIViewController {
         discoveredBy.text = "Discovered By: \(element.discoveredBy ?? "Information Unavailable")"
         elementBoiling.text = "Boiling Point: \(element.boilingPoint?.description ?? "Information Unavailable")"
         elementMelting.text = "Melting Point: \(element.meltingPoint?.description ?? "Information Unavailable")"
-        elementWeight.text = "Weight: \(element.weight)"
+        elementWeight.text = element.weight.description
         let imageNameStr = element.name.lowercased()
         let urlStr = "http://images-of-elements.com/\(imageNameStr).jpg"
         ImageHelper.shared.getImage(urlStr: urlStr) { (result) in
