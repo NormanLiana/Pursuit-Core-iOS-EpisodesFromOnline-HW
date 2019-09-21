@@ -58,16 +58,24 @@ class DetailElementViewController: UIViewController {
         elementWeight.text = element.weight.description
         let imageNameStr = element.name.lowercased()
         let urlStr = "http://images-of-elements.com/\(imageNameStr).jpg"
-        ImageHelper.shared.getImage(urlStr: urlStr) { (result) in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let imageFromOnline):
-                    self.elementImage.image = imageFromOnline
-                case .failure(let error):
-                    print(error)
+        switch self.element.number {
+        case 1...90:
+            ImageHelper.shared.getImage(urlStr: urlStr) { (result) in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let imageFromOnline):
+                        self.elementImage.image = imageFromOnline
+                    case .failure(let error):
+                        print(error)
+                    }
                 }
             }
+        case 91...118:
+            self.elementImage.image = UIImage(named: "noIdea")
+        default:
+            print("Something is wrong with loading DVC Image")
         }
+        
     }
     
 
