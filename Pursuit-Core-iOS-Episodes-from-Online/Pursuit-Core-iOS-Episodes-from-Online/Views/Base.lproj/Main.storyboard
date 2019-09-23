@@ -164,6 +164,7 @@
                                             <outlet property="episodeImage" destination="bjo-9q-Kkb" id="Zgb-5i-cHo"/>
                                             <outlet property="episodeName" destination="AGc-tA-AUd" id="Wsu-NS-o0U"/>
                                             <outlet property="seasonAndEpisodeNumbers" destination="nTZ-HN-FeN" id="TFi-E1-QyA"/>
+                                            <segue destination="TA5-DB-3nu" kind="show" identifier="segueToEpisodeDVC" id="btT-EY-bgg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

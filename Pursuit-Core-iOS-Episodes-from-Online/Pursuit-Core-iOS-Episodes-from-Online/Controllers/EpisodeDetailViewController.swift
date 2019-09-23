@@ -10,6 +10,12 @@ import UIKit
 
 class EpisodeDetailViewController: UIViewController {
 
+    // MARK: Outlets
+    
+    // MARK: Properties
+    var episode: Episode!
+    
+    // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
