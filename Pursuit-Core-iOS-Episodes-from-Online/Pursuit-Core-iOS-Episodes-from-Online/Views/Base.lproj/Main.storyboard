@@ -160,6 +160,11 @@
                                                 <constraint firstItem="bjo-9q-Kkb" firstAttribute="centerY" secondItem="vnu-SL-tkh" secondAttribute="centerY" id="qUj-nc-IdN"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="episodeImage" destination="bjo-9q-Kkb" id="Zgb-5i-cHo"/>
+                                            <outlet property="episodeName" destination="AGc-tA-AUd" id="Wsu-NS-o0U"/>
+                                            <outlet property="seasonAndEpisodeNumbers" destination="nTZ-HN-FeN" id="TFi-E1-QyA"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
