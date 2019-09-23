@@ -28,7 +28,7 @@ class EpisodeDetailViewController: UIViewController {
     // MARK: Private Methods
     private func setupViews() {
         episodeName.text = episode.name
-        episodeSummary.text = episode.summary
+        episodeSummary.text = episode.cleanedSummary
         seasonAndEpisodeLabel.text = episode.seasonAndEpisode
         if let urlStr = episode.image?.original {
             ImageHelper.shared.fetchImage(urlImage: urlStr) { (result) in

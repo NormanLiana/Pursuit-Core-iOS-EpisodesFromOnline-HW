@@ -17,6 +17,9 @@ struct Episode: Codable {
     let number: Int
     let image: ImageEpisodeWrapper?
     let summary: String
+    var cleanedSummary: String {
+        return summary.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
+    }
     var seasonAndEpisode: String {
         return "Season: \(season.description) Episode: \(number.description)"
     }
