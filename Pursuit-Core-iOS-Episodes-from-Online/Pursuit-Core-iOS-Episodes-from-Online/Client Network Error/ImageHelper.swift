@@ -14,7 +14,7 @@ class ImageHelper {
     
     static let shared = ImageHelper()
     
-    func fetchImage(urlImage:String, completionHandler: @escaping (Result<UIImage, AppError>) -> () ) {
+    func fetchImage(urlImage: String, completionHandler: @escaping (Result<UIImage, AppError>) -> () ) {
         NetworkManager.shared.fetchData(urlString: urlImage) { (result) in
             switch result{
             case .failure:

@@ -71,6 +71,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="showImage" destination="Xeb-18-x6y" id="pbY-6o-gvP"/>
                                             <outlet property="showNameLabel" destination="qYa-rS-YIQ" id="YzZ-G6-7vo"/>
                                             <outlet property="showRatingsLabel" destination="Hfh-pd-s9K" id="Rrs-km-Ero"/>
                                         </connections>
@@ -94,6 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8Sy-Ry-PY1"/>
                     <connections>
+                        <outlet property="showsSearchBar" destination="rbK-yz-QJm" id="uGQ-lC-0yk"/>
                         <outlet property="showsTableView" destination="yAg-Ar-4gn" id="6t8-fx-fg2"/>
                     </connections>
                 </viewController>

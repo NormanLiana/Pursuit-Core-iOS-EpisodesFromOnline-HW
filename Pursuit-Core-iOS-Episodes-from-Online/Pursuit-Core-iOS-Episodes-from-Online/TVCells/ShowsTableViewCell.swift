@@ -13,4 +13,5 @@ class ShowsTableViewCell: UITableViewCell {
     // MARK: Outlets
     @IBOutlet weak var showNameLabel: UILabel!
     @IBOutlet weak var showRatingsLabel: UILabel!
+    @IBOutlet weak var showImage: UIImageView!
 }

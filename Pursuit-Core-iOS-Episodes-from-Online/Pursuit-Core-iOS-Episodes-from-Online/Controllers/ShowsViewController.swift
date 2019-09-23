@@ -12,6 +12,7 @@ class ShowsViewController: UIViewController {
 
     // MARK: Outlets
 
+    @IBOutlet weak var showsSearchBar: UISearchBar!
     @IBOutlet weak var showsTableView: UITableView!
     
     // MARK: Properties
@@ -42,6 +43,7 @@ class ShowsViewController: UIViewController {
         super.viewDidLoad()
         showsTableView.dataSource = self
         showsTableView.delegate = self
+        showsSearchBar.delegate = self
     }
     
     // MARK: Private Methods
@@ -69,10 +71,21 @@ extension ShowsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         if let cells = showsTableView.dequeueReusableCell(withIdentifier: "showCell", for: indexPath) as? ShowsTableViewCell {
             cells.showNameLabel.text = shows[indexPath.row].show.name
-            cells.showRatingsLabel.text = shows[indexPath.row].score.description
+            cells.showRatingsLabel.text = shows[indexPath.row].show.rating?.average?.description
+            if let urlStr = shows[indexPath.row].show.image?.medium {
+                ImageHelper.shared.fetchImage(urlImage: urlStr) { (result) in
+                    DispatchQueue.main.async {
+                        switch result {
+                        case .success(let imageFromOnline):
+                            cells.showImage.image = imageFromOnline
+                        case .failure(let error):
+                            print(error)
+                        }
+                    }
+                }
+            }
             return cells
         }
         return UITableViewCell()
@@ -81,11 +94,14 @@ extension ShowsViewController: UITableViewDataSource {
 }
 
 extension ShowsViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
 }
 
-//extension ShowsViewController: UISearchBarDelegate {
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        <#code#>
-//    }
-//}
+extension ShowsViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.searchString = showsSearchBar.text
+        loadData(userInput: searchString)
+    }
+}
