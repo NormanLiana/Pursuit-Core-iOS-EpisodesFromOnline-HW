@@ -62,8 +62,17 @@ class ShowsViewController: UIViewController {
     }
     
     // MARK: Navigation Method
-   
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToEpisodes" {
+            guard let episodeListVC = segue.destination as? EpisodesViewController else {
+                fatalError()
+            }
+            guard let selectedIndexPath = showsTableView.indexPathForSelectedRow else {
+                fatalError()
+            }
+            episodeListVC.show = shows[selectedIndexPath.row]
+        }
+    }
 }
 
 // MARK: Extensions

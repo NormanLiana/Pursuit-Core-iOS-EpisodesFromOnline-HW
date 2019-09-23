@@ -10,10 +10,24 @@ import UIKit
 
 class EpisodesViewController: UIViewController {
 
+    // MARK: Outlets
+    
+    // MARK: Properties
+    var show: ShowWrapper!
+    
+    // MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-
-
+    // MARK: Private Methods
 }
+
+// MARK: Extensions
+//extension EpisodesViewController: UITableViewDelegate {
+//
+//}
+//
+//extension EpisodesViewController: UITableViewDataSource {
+//
+//}
