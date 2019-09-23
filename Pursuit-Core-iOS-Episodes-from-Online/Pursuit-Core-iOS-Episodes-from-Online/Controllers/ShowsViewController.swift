@@ -60,6 +60,9 @@ class ShowsViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: Navigation Method
+   
 
 }
 
