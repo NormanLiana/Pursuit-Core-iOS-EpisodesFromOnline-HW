@@ -61,6 +61,18 @@ extension EpisodesViewController: UITableViewDataSource {
         if let cells = episodeTableView.dequeueReusableCell(withIdentifier: "episodeCell", for: indexPath) as? EpisodeTableViewCell {
             cells.episodeName.text = episode[indexPath.row].name
             cells.seasonAndEpisodeNumbers.text = episode[indexPath.row].seasonAndEpisode
+            if let urlStr = episode[indexPath.row].image?.medium {
+                ImageHelper.shared.fetchImage(urlImage: urlStr) { (result) in
+                    DispatchQueue.main.async {
+                        switch result {
+                        case .success(let imageFromOnline):
+                            cells.episodeImage.image = imageFromOnline
+                        case .failure(let error):
+                            print(error)
+                        }
+                    }
+                }
+            }
             return cells
         }
         return UITableViewCell()
