@@ -16,7 +16,8 @@ class ShowAPIClient {
     
     func getShows(userSearchTerm: String?, completionHandler: @escaping (Result<[ShowWrapper], AppError>) -> () ) {
         if let urlString = userSearchTerm {
-           let urlStr = "http://api.tvmaze.com/search/shows?q=\(urlString)"
+            let noSpacesURL = urlString.replacingOccurrences(of: " ", with: "-")
+           let urlStr = "http://api.tvmaze.com/search/shows?q=\(noSpacesURL)"
         
         NetworkManager.shared.fetchData(urlString: urlStr) { (result) in
             switch result {
@@ -32,5 +33,9 @@ class ShowAPIClient {
                 
             }
         }
-        }}
+        }
+        
+    }
+    
+    
 }

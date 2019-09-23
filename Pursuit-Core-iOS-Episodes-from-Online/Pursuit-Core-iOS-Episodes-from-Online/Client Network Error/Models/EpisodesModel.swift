@@ -8,15 +8,18 @@
 
 import Foundation
 
-//http://api.tvmaze.com/shows/1/episodes
+//http://api.tvmaze.com/shows/139/episodes
 
 
 struct Episode: Codable {
     let name: String
-    let season: String
-    let number: String
-    let image: ImageEpisodeWrapper
+    let season: Int
+    let number: Int
+    let image: ImageEpisodeWrapper?
     let summary: String
+    var seasonAndEpisode: String {
+        return "Season: \(season.description) Episode: \(number.description)"
+    }
 }
 
 struct ImageEpisodeWrapper: Codable {
