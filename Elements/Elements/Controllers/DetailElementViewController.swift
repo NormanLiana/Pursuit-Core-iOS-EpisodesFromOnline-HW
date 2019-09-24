@@ -59,7 +59,7 @@ class DetailElementViewController: UIViewController {
         let imageNameStr = element.name.lowercased()
         let urlStr = "http://images-of-elements.com/\(imageNameStr).jpg"
         switch self.element.number {
-        case 1...90:
+        case 1...89:
             ImageHelper.shared.getImage(urlStr: urlStr) { (result) in
                 DispatchQueue.main.async {
                     switch result {
@@ -70,7 +70,7 @@ class DetailElementViewController: UIViewController {
                     }
                 }
             }
-        case 91...118:
+        case 90...118:
             self.elementImage.image = UIImage(named: "noIdea")
         default:
             print("Something is wrong with loading DVC Image")

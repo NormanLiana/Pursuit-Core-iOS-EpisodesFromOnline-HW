@@ -22,6 +22,9 @@
 		A5A950C1233405F9001B5BD0 /* ThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */; };
 		A5A950C323340A52001B5BD0 /* DetailElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C223340A52001B5BD0 /* DetailElementViewController.swift */; };
 		A5A950C6233428A8001B5BD0 /* FavoriteElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C5233428A8001B5BD0 /* FavoriteElement.swift */; };
+		A5A950C723370C1D001B5BD0 /* ElementAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950BA2333D394001B5BD0 /* ElementAPIClient.swift */; };
+		A5A950C823370C7A001B5BD0 /* Element Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950A42333C917001B5BD0 /* Element Model.swift */; };
+		A5A950C923370C80001B5BD0 /* ThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A950C0233405F9001B5BD0 /* ThumbnailImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -282,7 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A950C723370C1D001B5BD0 /* ElementAPIClient.swift in Sources */,
 				A5A950B32333CEC8001B5BD0 /* ElementsTests.swift in Sources */,
+				A5A950C923370C80001B5BD0 /* ThumbnailImage.swift in Sources */,
+				A5A950C823370C7A001B5BD0 /* Element Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

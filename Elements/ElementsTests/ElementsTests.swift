@@ -18,6 +18,22 @@ class ElementsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    
+    // MARK: Element Data Loads
+//    private func loadData() -> [Element] {
+//        ElementAPIManager.shared.getElements { (result) in
+//            DispatchQueue.main.async {
+//                switch result {
+//                case .success(let elementsFromOnline):
+//                    return elementsFromOnline
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
+//        }
+//    }
+//
+//    func testDataLoads() {
+//        
+//    }
 
 }

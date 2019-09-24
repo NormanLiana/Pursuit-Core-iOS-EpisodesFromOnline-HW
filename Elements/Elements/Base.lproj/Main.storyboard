@@ -36,7 +36,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjv-S5-bjm">
-                                                    <rect key="frame" x="176" y="111" width="186" height="29"/>
+                                                    <rect key="frame" x="115" y="111" width="186" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="Yyv-hr-pMy"/>
                                                         <constraint firstAttribute="width" constant="186" id="tyz-Kh-amv"/>
@@ -46,7 +46,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-GC-Umz">
-                                                    <rect key="frame" x="176" y="173.5" width="186" height="29"/>
+                                                    <rect key="frame" x="115" y="173.5" width="186" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="CQU-S4-zSd"/>
                                                         <constraint firstAttribute="width" constant="186" id="zS0-VZ-AoA"/>
